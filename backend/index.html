@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj's Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #3b82f6;
+        }
+
+        .project-card {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <div class="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <!-- Header Section -->
+        <header class="mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Surajpratapsingh Sayar</h1>
+            <h2 class="text-xl text-gray-600 mb-4">Azure Infrastructure Administrator & DevOps Engineer</h2>
+            <div class="flex flex-wrap items-center text-gray-600 mb-4">
+                <span class="mr-4">📍 Pune, India</span>
+                <span class="mr-4">📧 sunnysayar@gmail.com</span>
+                <span class="mr-4">📱 +91 7588272781</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://github.com/SurajpratapsinghSayar" target="_blank"
+                    class="text-blue-600 hover:text-blue-800 transition-colors">
+                    <svg class="w-5 h-5 inline-block" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                        </path>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/surajpratapsingh-sayar/" target="_blank"
+                    class="text-blue-600 hover:text-blue-800 transition-colors">
+                    <svg class="w-5 h-5 inline-block" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                        </path>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="resume.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 transition-colors">
+                    <svg class="w-5 h-5 inline-block" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.363 2c4.155 0 2.637 6 2.637 6s6-1.65 6 2.457v11.543h-16v-20h7.363zm.826-2h-10.189v24h20v-14.386c0-2.391-6.648-9.614-9.811-9.614zm4.811 13h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784zm-4.9 0h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.555-.648.587-2.568-.062-3.069-.298-.238-.692-.082-1.2-.082zm-.692.783h.496c.473 0 .802.173.999.607.323.708.313 1.486-.01 1.795-.138.132-.324.197-.497.197h-.988v-2.599zm-2.74-.783h-1.699v3.686h.897v-1.101h.064l.701 1.101h1.107l-.885-1.166c.406-.084.754-.402.754-.9 0-.736-.576-1.62-1.839-1.62zm-.953.783h.629c.383 0 .754.172.754.614 0 .446-.371.616-.754.616h-.629v-1.23z" />
+                    </svg>
+                    Resume
+                </a>
+            </div>
+        </header>
+
+        <!-- Bio Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6 section-title">About Me</h2>
+            <p class="text-gray-700">
+                Experienced Azure Infrastructure Administrator and DevOps Engineer with extensive expertise in cloud
+                architecture, infrastructure automation, and CI/CD implementation. Specialized in PeopleSoft security
+                management and optimization. Skilled in designing and maintaining secure, scalable Azure environments
+                while implementing DevOps practices to streamline deployment processes and enhance system reliability.
+                Committed to delivering robust infrastructure solutions that align with business objectives and security
+                requirements.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6 section-title">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 project-card">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Resume on Cloud ☁️</h3>
+                    <p class="text-gray-600 mb-4">
+                        My personal portfolio website built on a serverless backend using API Gateway, Azure Functions,
+                        and CosmosDB. The entire infrastructure is managed with Terraform, and frontend changes are
+                        seamlessly integrated and deployed using GitHub Actions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                            <svg class="w-5 h-5 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                </path>
+                            </svg>
+                            Source
+                        </a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                            <svg class="w-5 h-5 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z">
+                                </path>
+                            </svg>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6 section-title">Certifications</h2>
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-1 text-gray-800">Terraform Associate (003)</h3>
+                    <p class="text-gray-500 mb-2">HashiCorp • Issued March 2025</p>
+                    <p class="text-gray-600">
+                        Ability to use Terraform for infrastructure as code, including provisioning, managing, and
+                        automating cloud infrastructure across multiple providers using best practices.
+                    </p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-1 text-gray-800">Azure Administrator Associate</h3>
+                    <p class="text-gray-500 mb-2">Microsoft • Issued Nov 2024</p>
+                    <p class="text-gray-600">
+                        Ability to manage Azure resources, implement and monitor cloud infrastructure, and handle
+                        governance, security, and networking in Microsoft Azure.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-16 text-gray-500 text-sm">
+        <p>© 2025 Surajpratapsingh Sayar. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
